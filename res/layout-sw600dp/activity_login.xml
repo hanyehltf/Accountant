@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity"
+    android:background="@drawable/login_background"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true"
+    >
+
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/userName"
+        android:background="@drawable/shapeofedittext"
+        android:textDirection="ltr"
+        android:padding="@dimen/StandardPadding"
+        android:textColor="@android:color/black"
+        android:layout_centerInParent="true"
+        />
+
+
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:background="@drawable/shapeofedittext"
+        android:textDirection="ltr"
+        android:layout_marginTop="@dimen/StandardMargin"
+        android:textColor="@android:color/black"
+        android:padding="@dimen/StandardPadding"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/login_username"/>
+    <Button
+        android:id="@+id/Loginbutton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/StandardMargin"
+        android:textColor="@android:color/background_light"
+        android:text="@string/login"
+        android:background="@drawable/shapeofbutton"
+        android:layoutDirection="ltr"
+        android:layout_below="@id/login_password"
+        android:layout_centerInParent="true"
+
+
+        />
+    <TextView
+        android:id="@+id/dont_signup_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/darker_gray"
+        android:text="@string/ifyoudontsignup"
+        android:textDirection="ltr"
+
+        android:layout_below="@id/Loginbutton"
+        android:layout_centerInParent="true"        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<resources>
+    <string name="app_name">MyAccountent</string>
+    <string name="userName"> Email</string>
+    <string name="password">password</string>
+    <string name="ifyoudontsignup"><u>"do not have an account "</u> <b>signup</b></string>
+    <string name="emailtextview">Email</string>
+    <string name="businessName">Business Name</string>
+    <string name="businessType">Business Type</string>
+    <string name="signUpButton">Create Account</string>
+    <string name="profile">profile</string>
+    <string name="chart">chart</string>
+    <string name="price">account</string>
+    <string name="business">business</string>
+    <string name="login">login</string>
+    <string name="loginout">log out</string>
+    <string name="info_of_business"><u>information of business</u></string>
+    <string name="buttonEditBusiness">
+        Edite Business
+    </string>
+    <string name="buttonAddBusiness">
+        Add Business
+    </string>
+
+
+
+    <string name="buttonProduct">
+        Add Products
+    </string>
+
+
+    <string name="buttonService">
+        Add Services
+    </string>
+
+    <string name="nameOfProduct">
+        Name
+    </string>
+    <string name="PriceOfProduct">
+        Price
+    </string>
+
+    <string name="CountOfProduct">
+        Count
+    </string>
+
+
+    <string name="Add">
+        Add
+    </string>
+
+
+    <string name="nameOfService">
+        Name
+    </string>
+    <string name="PriceOfService">
+        Price
+    </string>
+
+    <string name="Service">
+       Service
+    </string>
+
+
+    <string name="Product">
+       Product
+    </string>
+
+    <string name="Language">
+      Language
+    </string>
+
+    <string name="STATUS_EMAIL_EXIST">this Email already exist </string>
+    <string name="STATUS_EMAIL_SUCCESS">Sign Up was Successful </string>
+    <string name="STATUS_EMAIL_FIELD">Sign Up was Field pleas Try Again </string>
+    <string name="valid_email">this Email is not Valid </string>
+    <string name="login_error">
+        this Email is not Exist please try again
+    </string>
+    <string name="empty_field">
+       please fill the field!!!!
+    </string>
+    <string name="password_long">password should be 8 or more character</string>
+    <string name="hint_spinner">choose your Business Type</string>
+    <string name="CountofProducts">Count of Products : </string>
+
+
+</resources>

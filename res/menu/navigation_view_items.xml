@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/profile_info"
+    android:title="@string/loginout"
+    android:enabled="true"
+    />
+
+
+    <item android:id="@+id/language"
+        android:title="@string/Language"
+        android:enabled="true"
+        />
+
+</menu>

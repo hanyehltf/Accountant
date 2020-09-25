@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tool="http://schemas.android.com/apk/res-auto"
+    tools:context="com.MyAccountent.MyAccountent.Fragment.AccountFragment">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    >
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+           android:layout_gravity="center"
+
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="email"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ImportantTitle"
+                android:textDirection="ltr"
+                android:gravity="center"
+                android:layout_margin="@dimen/StandardMargin"
+                android:hint=""
+
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:text="Log out"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/ImportantTitle"
+                android:textDirection="ltr"
+                android:gravity="center"
+                android:layout_margin="@dimen/StandardMargin"
+
+                />
+
+
+        </LinearLayout>
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+</FrameLayout>

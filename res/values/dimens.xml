@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TitleOfPageFontSize">20sp</dimen>
+    <dimen name="NormalFontSize">15sp</dimen>
+
+    <dimen name="ImportantTitle">20sp</dimen>
+    <dimen name="errorText">12sp</dimen>
+    <dimen name="StandardMargin">12dp</dimen>
+    <dimen name="StandardPadding">12dp</dimen>
+    <dimen name="Margin">20dp</dimen>
+<dimen name="navigation_size">200dp</dimen>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity"
+android:layoutDirection="rtl"
+style="@style/AppTheme"
+    android:id="@+id/drawer">
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/coordinator_layout">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+
+
+
+
+
+  <com.google.android.material.bottomnavigation.BottomNavigationView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@drawable/shapeofbackgroundnavigation"
+android:id="@+id/bottom_Navigation"
+      android:layout_gravity="bottom"
+      app:menu="@menu/navigation_menu"
+
+app:labelVisibilityMode="labeled"
+      app:itemTextColor="@android:color/darker_gray"
+      app:itemIconTint="@android:color/darker_gray"
+
+
+      >
+
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_gravity="bottom"
+          >
+          <ImageButton
+              android:id="@+id/chart_vector"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/circle"
+              android:src="@drawable/chart_icon"
+android:layout_marginRight="30dp"
+              android:visibility="invisible"
+
+
+              />
+
+          <ImageButton
+              android:id="@+id/price_vector"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/circle"
+              android:src="@drawable/price_icon"
+android:visibility="invisible"
+              android:layout_marginRight="73dp"
+
+
+              />
+
+          <ImageButton
+              android:id="@+id/business_vector"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/circle"
+              android:src="@drawable/work_icon"
+              android:visibility="invisible"
+
+              android:layout_marginRight="66dp"
+
+
+              />
+
+
+
+      </LinearLayout>
+
+  </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="@dimen/navigation_size"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/navigation_view"
+
+        android:background="@drawable/background"
+        app:menu="@menu/navigation_view_items"
+        app:headerLayout="@layout/header_navigarion"
+        >
+
+
+
+
+
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

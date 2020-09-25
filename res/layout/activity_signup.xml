@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SignupActivity"
+    android:background="@drawable/background"
+    android:layout_gravity="center"
+    android:layout_centerInParent="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/SinUp_username"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shapeofedittext"
+                android:hint="@string/emailtextview"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/StandardPadding"
+                android:textColor="@color/colorPrimaryDark"
+                android:textDirection="ltr" />
+
+        <EditText
+                android:id="@+id/signUp_password"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/SinUp_username"
+                android:layout_marginTop="@dimen/StandardMargin"
+                android:background="@drawable/shapeofedittext"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="@dimen/StandardPadding"
+                android:textColor="@color/colorPrimaryDark"
+                android:textDirection="ltr" />
+
+            <EditText
+                android:id="@+id/Business_Name"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/SinUp_username"
+                android:layout_marginTop="@dimen/StandardMargin"
+                android:background="@drawable/shapeofedittext"
+                android:hint="@string/businessName"
+                android:padding="@dimen/StandardPadding"
+                android:textColor="@color/colorPrimaryDark"
+                android:textDirection="ltr" />
+
+        <Spinner
+            android:id="@+id/Business_Type_sppiner"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shapeofedittext"
+            android:padding="@dimen/StandardMargin"
+            android:textDirection="ltr" />
+
+        <Button
+                android:id="@+id/SignUp_btn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/Margin"
+                android:background="@drawable/selector"
+                android:text="@string/signUpButton"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/NormalFontSize"
+                android:layout_centerInParent="true"
+                android:layout_below="@id/signUp_password"
+
+                />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

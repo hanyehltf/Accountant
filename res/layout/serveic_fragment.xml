@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        >
+
+
+
+
+
+
+
+
+
+
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleEnabled="false"
+            android:animateLayoutChanges="true"
+            android:scrollbars="vertical"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:id="@+id/collapsing"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+
+            >
+
+
+            <LinearLayout
+                android:id="@+id/product_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+                <EditText
+                    android:id="@+id/Service_Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_selector"
+                    android:hint="@string/nameOfService"
+                    android:textSize="@dimen/NormalFontSize"
+                    android:layout_marginTop="@dimen/Margin"
+                    android:layout_marginLeft="@dimen/Margin"
+                    android:padding="@dimen/StandardMargin"
+                    android:layout_gravity="left|top"
+                    />
+                <EditText
+                    android:id="@+id/Service_Price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_selector"
+                    android:hint="@string/PriceOfService"
+                    android:textSize="@dimen/NormalFontSize"
+                    android:layout_marginTop="@dimen/Margin"
+                    android:layout_marginLeft="@dimen/Margin"
+                    android:padding="@dimen/StandardMargin"
+                    android:layout_gravity="left|center"
+                    />
+                <EditText
+                    android:id="@+id/Service_Time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_selector"
+                    android:hint="Time"
+                    android:textSize="@dimen/NormalFontSize"
+                    android:layout_marginTop="@dimen/Margin"
+                    android:layout_marginLeft="@dimen/Margin"
+                    android:padding="@dimen/StandardMargin"
+                    android:layout_gravity="left|bottom"
+                    />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/App_Service"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector"
+                android:layout_marginTop="@dimen/StandardMargin"
+                android:text="@string/buttonService"
+                android:textColor="@android:color/white"
+                android:layout_gravity="right|bottom"
+
+
+                />
+
+
+
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+
+        <RelativeLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+
+
+            >
+
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="2dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/StandardMargin"
+                android:background="@drawable/cardviewbackground"
+                >
+
+
+                <TableLayout
+                    android:id="@+id/Service_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/cardviewbackground"
+                    android:gravity="start"
+
+                    >
+
+                    <TableRow
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/Margin"
+
+                        android:gravity="center"
+                        android:padding="@dimen/StandardMargin"
+                        android:textAlignment="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="@dimen/StandardMargin"
+                            android:background="@drawable/selector"
+                            android:gravity="center"
+                            android:text="@string/nameOfService"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/NormalFontSize"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/StandardMargin"
+                            android:layout_marginRight="@dimen/StandardMargin"
+                            android:background="@drawable/selector"
+                            android:gravity="center"
+                            android:text="Time"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/NormalFontSize"
+
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="@dimen/StandardMargin"
+                            android:background="@drawable/selector"
+                            android:gravity="center"
+                            android:text="@string/PriceOfService"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/white"
+                            android:textSize="@dimen/NormalFontSize"
+
+
+                            />
+
+                    </TableRow>
+
+                    <TableRow
+                        >
+
+
+
+
+                    </TableRow>
+                </TableLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </RelativeLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_gravity="top|start"
+
+        >
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Recycle_vew_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            />
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</FrameLayout>

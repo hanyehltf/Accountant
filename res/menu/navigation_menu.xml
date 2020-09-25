@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+
+
+
+
+
+
+
+    <item
+
+        android:id="@+id/chart"
+        android:icon="@drawable/chart"
+        android:title="@string/chart"
+        android:enabled="true"
+
+        />
+    <item
+        android:id="@+id/price"
+        android:icon="@drawable/price"
+        android:title="@string/price"
+        android:enabled="true"
+
+
+        />
+
+    <item
+        android:id="@+id/business"
+        android:icon="@drawable/business"
+        android:title="@string/business"
+        android:enabled="true"/>
+
+
+</menu>
